@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Learn Encryption</h1>
+        <p>Explore the Playfair Cipher and Vigenère Cipher</p>
+    </header>
+    <main>
+        <section id="playfair-section">
+            <h2>Playfair Cipher</h2>
+            <label for="playfair-input">Input Text:</label>
+            <input type="text" id="playfair-input" placeholder="Enter text">
+            <label for="playfair-key">Keyword:</label>
+            <input type="text" id="playfair-key" placeholder="Enter keyword">
+            <button onclick="encryptPlayfair()">Encrypt</button>
+            <button onclick="decryptPlayfair()">Decrypt</button>
+            <p>Result: <span id="playfair-result"></span></p>
+        </section>
+
+        <section id="vigenere-section">
+            <h2>Vigenère Cipher</h2>
+            <label for="vigenere-input">Input Text:</label>
+            <input type="text" id="vigenere-input" placeholder="Enter text">
+            <label for="vigenere-key">Keyword:</label>
+            <input type="text" id="vigenere-key" placeholder="Enter keyword">
+            <button onclick="encryptVigenere()">Encrypt</button>
+            <button onclick="decryptVigenere()">Decrypt</button>
+            <p>Result: <span id="vigenere-result"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Encryption Learning Platform</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
